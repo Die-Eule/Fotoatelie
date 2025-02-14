@@ -1,0 +1,293 @@
+* {
+    font-family: "Inter", serif;
+    font-size: small;
+}
+
+.reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B29B7D;
+}
+
+.reg h1 {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.formReg {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.formRegElem {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRegElem label {
+    margin-top: 1vh;
+}
+
+.formRegElem input {
+    height: 3vh;
+    border-radius: 10px;
+}
+
+.formRegElem input:hover {
+    border-color: #B29B7D;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.links a {
+    color: black;
+    margin-left: 1%;
+}
+
+.links a:hover {
+    color: #B29B7D;
+}
+
+.links button {
+    background-color: #B29B7D;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.links button:hover {
+    background-color: #806b4f;
+    cursor: pointer;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #B29B7D;
+}
+
+header h1 {
+    margin-left: 5vw;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+header div {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8vw;
+}
+
+header div a {
+    color: white;
+    text-decoration: none;
+}
+
+header div a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.content {
+    margin-top: 14vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #806b4f;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    color: #725c3e;
+}
+
+
+.bigElement {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.bigElement div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigElement div button {
+    background-color: #B29B7D;
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    color: white;
+    margin-top: 3vh;
+}
+
+.bigElement div button:hover {
+    background-color: #806b4f;
+    cursor: pointer;
+}
+
+.bigElement div img {
+    width: 35vw;
+}
+
+.bigElement p {
+    text-align: justify;
+}
+
+.bigElement p span {
+    text-transform: uppercase;
+}
+
+
+.onas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onas p {
+    width: 50vw;
+    text-align: justify;
+}
+
+.onas p span {
+    text-transform: uppercase;
+}
+
+@media (max-width: 1120px) {
+    header div {
+        width: 25vw;
+    }    
+}
+
+@media (max-width: 850px) {
+    .bigElement p {
+        font-size: x-small;
+    }
+
+    .bigElement p span {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 750px) {
+    .onas p {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 670px) {
+    .bigElement p {
+        font-size: xx-small;
+    }
+
+    .bigElement p span {
+        font-size: xx-small;
+    }
+
+    .bigElement div button {
+        font-size: xx-small;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    header div {
+        width: 40vw;
+    }    
+}
+
+@media (max-width: 620px) {
+    .card p {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 590px) {
+    .bigElement {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bigElement div img {
+        width: 70vw;
+    }
+
+    .bigElement p {
+        margin-top: 3vh;
+        width: 60vw;
+    }
+}
+
+
+@media (max-width: 490px) {
+    .cards {
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card {
+        margin: 3vh;
+        width: 40vw;
+    }
+    
+}
+
+
+@media (max-width: 430px) {
+    header div {
+        width: 50vw;
+    }    
+}
